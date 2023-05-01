@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Pete's Pizza Delivery</title>
+    <style>
+        label {
+            display: block;
+            margin-bottom: 10px;
+        }
+        .column-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-gap: 10px;
+        }
+    </style>
+</head>
+<body>
+<div>
+
+    <h1>Pete's Pizza Delivery</h1>
+    <h3>Online Order Form</h3>
+    <form action="" method="post">
+        <div>
+            <label for="name">Name: <input type="text" name="name" id="name" required></label>
+            <label for="address">Phone: <input type="text" name="address" id="address" required></label>
+            <label for="town-city">Address: <input type="text" name="town-city" id="town-city" required></label>
+            <label for="postcode">Postcode: <input type="text" name="postcode" id="postcode" required></label>
+            <label for="tel">Email: <input type="tel" name="tel" id="tel" required></label>
+            <label for="email">Email: <input type="email" name="email" id="email" required></label>
+        </div>
+        <div class="column-container">
+            <div>
+                <h6>Topping</h6>
+                <label for="margherita"><input type="radio" name="margherita" id="margherita">Margherita</label>
+                <label for="four-season"><input type="radio" name="four-season" id="four-season">Four Season</label>
+                <label for="meat-feast"><input type="radio" name="meat-feast" id="meat-feast">Meat Feast</label>
+                <label for="hawaiian"><input type="radio" name="hawaiian" id="hawaiian">Hawaiian</label>
+            </div>
+            <div>
+                <h6>Size</h6>
+                <label for="small"><input type="radio" name="small" id="small">Small</label>
+                <label for="medium"><input type="radio" name="medium" id="medium">Medium</label>
+                <label for="large"><input type="radio" name="large" id="large">Large</label>
+            </div>
+            <div>
+                <h6>Extras</h6>
+                <label for="mushrooms"><input type="checkbox" name="mushrooms" id="mushrooms">Mushrooms</label>
+                <label for="green-peppers"><input type="checkbox" name="green-peppers" id="green-peppers">Green Peppers</label>
+                <label for="anchovies"><input type="checkbox" name="anchovies" id="anchovies">Anchovies</label>
+                <label for="extra-cheese"><input type="checkbox" name="extra-cheese" id="extra-cheese">Extra Cheese</label>
+            </div>
+            <div>
+                <label for="delivery-date">Preferred Delivery Date: <input type="datetime-local" name="delivery-date" id="delivery-date"></label>
+                <label for="delivery-instruction">Delivery Instruction: <textarea name="delivery-instruction" id="delivery-instruction" cols="30" rows="10"></textarea></label>
+            </div>
+        </div>
+        <button type="submit">Submit Order</button>
+    </form>
+</div>
+</body>
+</html>
